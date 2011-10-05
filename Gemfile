@@ -7,6 +7,9 @@ gem 'rails', '3.0.5'
 
 gem 'sqlite3'
 
+# added by aj
+gem 'instagram'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

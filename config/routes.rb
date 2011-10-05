@@ -1,7 +1,10 @@
 InstaCrawler::Application.routes.draw do
-  resources :images
-
   get "home/index"
+  get "home/getData"
+
+  match "/getData" => "home#getData"
+
+  resources :images
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

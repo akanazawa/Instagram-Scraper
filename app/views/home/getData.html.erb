@@ -1,0 +1,10 @@
+<h1>Instagram Scraper</h1>
+<p> get data from instagram </p>
+
+<% @popular.each do |p| %>
+<% if p.caption != nil %>
+<h3><%= p.caption.text %></h3>
+<img src="<%= p.images.thumbnail.url %>">
+<hr>
+<% end %>
+<% end %>
